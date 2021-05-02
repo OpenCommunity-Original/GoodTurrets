@@ -1,0 +1,161 @@
+name: SkullTurret
+main: plugin.arcwolf.skullturrets.SkullTurret
+version: 0.4
+description: This is a plugin to make placed skulls act like turrets.
+author: ArcWolf
+website: http://dev.bukkit.org/bukkit-plugins/skull-turret/
+commands:
+  skull:
+    aliases: sk
+    description: Main Skull Turret Command
+    usage: /skull [?|help] (arg)
+           /skull [edit|add|rem|buy|costs|player|patrol|redstone|rotate|skin|ammo|list|listall|give|reload|done] (EntityType)(PlayerName) (maxTurret) (MaxRange)
+  skskin:
+    description: Changes or Resets the Skin of the skull 
+    permission: skullturret.skin
+    usage: |
+      /<command> -Changes or Resets the Skin of the skull
+  skdebug:
+    description: Enables debugging - Debug Only 
+    permission: skullturret.debug
+    usage: |
+      /<command> - Enables debugging
+  skgive:
+    description: Gives the player a skull or bow item of their choosing 
+    permission: skullturret.give
+    usage: |
+      /<command> - crazed, devious, master, wizard, bow types
+  skaddfriend:
+    description: Addes a friend to the clicked skull 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Adds a friend to the clicked skull
+  skaddenemy:
+    description: Addes a enemy to the clicked skull 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Adds a enemy to the clicked skull
+  skremfriend:
+    description: Removes a friend from the clicked skull 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Removes a friend from the clicked skull
+  skremenemy:
+    description: Removes a enemy from the clicked skull 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Removes a enemy from the clicked skull
+  skedit:
+    description: Enables Skull Selecting for Editing IFF of skulls 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Enables Skull Selecting for Editing IFF of skulls
+  skdone:
+    description: Disables Skull Selection 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Disables Skull Selection
+  skreload:
+    description: Reloads SkullTurret's datafiles 
+    permission: skullturret.reload
+    usage: |
+      /<command> - Reloads SkullTurret's datafiles     
+  skpatrol:
+    description: Toggles Skull Patrol Cycle 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Toggles Skull Patrol Cycle
+  skrotate:
+    description: Rotates Skull 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Rotates Skull
+  skredstone:
+    description: Toggles the skulls ability to listen for redstone power 
+    permission: skullturret.edit
+    usage: |
+      /<command> - Toggles the skulls ability to listen for redstone power
+  skammo:
+    description: Sets a skulls default ammo type when not using ammo boxes 
+    permission: skullturret.changeammo
+    usage: |
+      /<command> - Sets a skulls default ammo type when not using ammo boxes
+  skaddplayer:
+    description: Adds a player to custom values list 
+    permission: skullturret.addplayer
+    usage: |
+      /<command> - Adds a player to custom values list
+  skremplayer:
+    description: Removes a player from custom values list 
+    permission: skullturret.remplayer
+    usage: |
+      /<command> - Removes a player from custom values list    
+  sklistplayer:
+    description: Shows a players custom values info 
+    permission: skullturret.listplayer
+    usage: |
+      /<command> - Shows a players custom values info
+  sklistallplayer:
+    description: Shows a list of players in the custom values list 
+    permission: skullturret.listallplayer
+    usage: |
+      /<command> - Shows a list of players in the custom values list
+permissions:
+  skullturret.*:
+    default: op
+    children:
+      skullturret.admin: true
+      skullturret.destruct: true
+      
+  skullturret.admin:
+    default: false
+    children:
+      skullturret.give: true
+      skullturret.create: true
+      skullturret.changeammo: true
+      skullturret.skin: true
+      skullturret.perplayer: true
+      skullturret.reload: true
+      skullturret.target.*: true
+      skullturret.destruct: true
+      skullturret.multiskullupdate: true
+      skullturret.attack: true
+      skullturret.repair: true
+      skullturret.buy: true
+      
+  skullturret.perplayer:
+    default: false
+    children:
+      skullturret.addplayer: true
+      skullturret.remplayer: true
+      skullturret.adminlistplayer: true
+      
+  skullturret.create:
+    default: false
+    children:
+      skullturret.use: true
+      skullturret.use.bow: true
+      skullturret.use.tempturret: true
+      skullturret.edit: true
+      skullturret.create.crazed: true
+      skullturret.create.devious: true
+      skullturret.create.master: true
+      skullturret.create.wizard: true
+      skullturret.create.bow: true
+      skullturret.create.tempdevious: true
+      skullturret.create.tempmaster: true
+
+  skullturret.buy:
+    default: false
+    children:
+      skullturret.buy.crazed: true
+      skullturret.buy.devious: true
+      skullturret.buy.master: true
+      skullturret.buy.wizard: true
+      skullturret.buy.bow: true
+      
+  skullturret.attack:
+    default: false
+    children:
+      skullturret.attack.bow: true
+      skullturret.attack.weapon: true      

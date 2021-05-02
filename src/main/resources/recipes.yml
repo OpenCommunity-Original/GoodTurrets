@@ -1,0 +1,88 @@
+Version: 1
+# The following are settings for the skull and skull bow recipes
+# A recipe is set in a grid and looks something like below:
+#    
+#  TL  TM  TR
+#  CL  --  CR
+#  BL  BM  BR
+#
+# The center of the grid is unavailable because its used for the Skull or bow item and is hardcoded
+# TL for the TopLeft recipe slot
+# TM for the TopMiddle recipe slot
+# TR for the TopRight recipe slow
+# CL for the CenterLeft recipe slot
+# CR for the CenterRight recipe slot
+# BL for the BottomLeft bottom recipe slot
+# BM for the BottomMiddle recipe slot
+# BR for the BottomRight recipe slot
+#
+# A Recipes' materials or Dye must be valid with the current version of bukkit you are using
+# They must be entered exactly as they are in the material or dye list mentioned below
+# This includes capitalization and underscores if necessary
+# AIR values are ignored and considered to be an empty grid location
+# Material list may be found at http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html
+# Lastly because the Wizard Skull uses a Dye in its recipe I also must support dyes based on color
+# The Dye color list can be found at http://jd.bukkit.org/rb/apidocs/org/bukkit/DyeColor.html
+#
+# Crafted amount is the amount of items that a single recipe will craft into
+# This allows you to use the crafting ingredients and get multiple skulls per craft
+#
+# If Enabled is true then the recipe is loaded for use by players.
+# If false the recipe is not loaded and that skull type can not be crafted. The give command is unaffected
+# by this setting.
+
+Crazed:
+  TopLeft: AIR
+  TopMiddle: REDSTONE
+  TopRight: AIR
+  CenterLeft: SPIDER_EYE
+  CenterRight: SPIDER_EYE
+  BottomLeft: AIR
+  BottomMiddle: STICK
+  BottomRight: AIR
+  CraftedAmount: 1
+  Enabled: true
+Devious:
+  TopLeft: AIR
+  TopMiddle: GLOWSTONE_DUST
+  TopRight: AIR
+  CenterLeft: ENDER_PEARL
+  CenterRight: ENDER_PEARL
+  BottomLeft: AIR
+  BottomMiddle: BONE
+  BottomRight: AIR
+  CraftedAmount: 1
+  Enabled: true
+Master:
+  TopLeft: GHAST_TEAR
+  TopMiddle: BOOK_AND_QUILL
+  TopRight: GHAST_TEAR
+  CenterLeft: EYE_OF_ENDER
+  CenterRight: EYE_OF_ENDER
+  BottomLeft: AIR
+  BottomMiddle: BLAZE_ROD
+  BottomRight: AIR
+  CraftedAmount: 1
+  Enabled: true
+Wizard:
+  TopLeft: GRAY
+  TopMiddle: AIR
+  TopRight: NETHER_STALK
+  CenterLeft: AIR
+  CenterRight: AIR
+  BottomLeft: GLOWSTONE_DUST
+  BottomMiddle: MAGMA_CREAM
+  BottomRight: GLOWSTONE_DUST
+  CraftedAmount: 1
+  Enabled: true
+Skull_Bow:
+  TopLeft: AIR
+  TopMiddle: AIR
+  TopRight: AIR
+  CenterLeft: SLIME_BALL
+  CenterRight: EYE_OF_ENDER
+  BottomLeft: AIR
+  BottomMiddle: AIR
+  BottomRight: AIR
+  CraftedAmount: 1
+  Enabled: true

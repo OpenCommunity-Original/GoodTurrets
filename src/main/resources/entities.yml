@@ -1,0 +1,157 @@
+Version: 1
+# This list of entities is primarily used for target priorities and wizard skull spell choices.
+# Master skulls will target any living entity and do not use this list
+# Each entity type has a rating that is used in the calculation of how important they are as a target,
+# the higher the number the more important a target the entity is.
+#
+# CanPoison is used for wizard skull spells and if the target is immune to poison
+# MustHeal is used for wizard skull spells and if the target can only be harmed with heal
+#
+# Entities must be entered exactly as they are show on the web-page provided below
+# including underscores and capitalization
+# A list is available at this address: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+
+EntityType:
+  PLAYER:
+    Rating: 50
+    CanPoison: true
+    MustHeal: false
+  ENDER_DRAGON:
+    Rating: 30
+    CanPoison: false
+    MustHeal: false
+  WITHER:
+    Rating: 30
+    CanPoison: false
+    MustHeal: true
+  GIANT:
+    Rating: 30
+    CanPoison: true
+    MustHeal: false
+  GHAST:
+    Rating: 25
+    CanPoison: true
+    MustHeal: false
+  GUARDIAN:
+    Rating: 20
+    CanPoison: true
+    MustHeal: false
+  CREEPER:
+    Rating: 18
+    CanPoison: true
+    MustHeal: false
+  BLAZE:
+    Rating: 18
+    CanPoison: true
+    MustHeal: false
+  SKELETON:
+    Rating: 15
+    CanPoison: false
+    MustHeal: true
+  WITCH:
+    Rating: 13
+    CanPoison: false
+    MustHeal: false
+  CAVE_SPIDER:
+    Rating: 11
+    CanPoison: false
+    MustHeal: false
+  SPIDER:
+    Rating: 11
+    CanPoison: false
+    MustHeal: false
+  MAGMA_CUBE:
+    Rating: 10
+    CanPoison: true
+    MustHeal: false
+  ENDERMAN:
+    Rating: 10
+    CanPoison: false
+    MustHeal: false
+  PIG_ZOMBIE:
+    Rating: 5
+    CanPoison: false
+    MustHeal: true
+  IRON_GOLEM:
+    Rating: 5
+    CanPoison: true
+    MustHeal: false
+  SILVERFISH:
+    Rating: 6
+    CanPoison: true
+    MustHeal: false
+  ENDERMITE:
+    Rating: 5
+    CanPoison: true
+    MustHeal: false
+  SLIME:
+    Rating: 5
+    CanPoison: true
+    MustHeal: false
+  ZOMBIE:
+    Rating: 5
+    CanPoison: false
+    MustHeal: true
+  WOLF:
+    Rating: 2
+    CanPoison: true
+    MustHeal: false
+  BAT:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  CHICKEN:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  COW:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  HORSE:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  MUSHROOM_COW:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  OCELOT:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  PIG:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  SHEEP:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  SNOWMAN:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  SQUID:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  RABBIT:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+  VILLAGER:
+    Rating: 1
+    CanPoison: true
+    MustHeal: false
+    
+# This is a list of custom names that can be used with add/rem enemy/friend commands
+# An example would be /sk add enemy monster
+# would in this case all all the entities listed below for monster 
+CustomNames:
+  ANIMAL:
+    Entities: BAT,CHICKEN,COW,HORSE,RABBIT,SHEEP,SQUID,MUSHROOM_COW,OCELOT,PIG,WOLF
+  MONSTER:
+    Entities: BLAZE,CAVE_SPIDER,CREEPER,ENDERMAN,ENDERMITE,GHAST,GUARDIAN,MAGMA_CUBE,PIG_ZOMBIE,SILVERFISH,SKELETON,SLIME,SPIDER,WITCH,ZOMBIE
+  BOSS:
+    Entities: ENDER_DRAGON,WITHER,GIANT

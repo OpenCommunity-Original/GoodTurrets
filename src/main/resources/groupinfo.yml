@@ -1,0 +1,8 @@
+Version: 1
+Groups:
+  guest:
+    MaxTurrets: 1
+    MaxRange: 21
+  member:
+    MaxTurrets: 15
+    MaxRange: 21
