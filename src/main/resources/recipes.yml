@@ -57,8 +57,8 @@ Master:
   TopLeft: GHAST_TEAR
   TopMiddle: BOOK_AND_QUILL
   TopRight: GHAST_TEAR
-  CenterLeft: EYE_OF_ENDER
-  CenterRight: EYE_OF_ENDER
+  CenterLeft: ENDER_EYE
+  CenterRight: ENDER_EYE
   BottomLeft: AIR
   BottomMiddle: BLAZE_ROD
   BottomRight: AIR
@@ -67,7 +67,7 @@ Master:
 Wizard:
   TopLeft: GRAY
   TopMiddle: AIR
-  TopRight: NETHER_STALK
+  TopRight: BLAZE_ROD
   CenterLeft: AIR
   CenterRight: AIR
   BottomLeft: GLOWSTONE_DUST
@@ -80,7 +80,7 @@ Skull_Bow:
   TopMiddle: AIR
   TopRight: AIR
   CenterLeft: SLIME_BALL
-  CenterRight: EYE_OF_ENDER
+  CenterRight: ENDER_EYE
   BottomLeft: AIR
   BottomMiddle: AIR
   BottomRight: AIR

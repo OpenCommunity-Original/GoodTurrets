@@ -144,7 +144,7 @@ EntityType:
     Rating: 1
     CanPoison: true
     MustHeal: false
-    
+
 # This is a list of custom names that can be used with add/rem enemy/friend commands
 # An example would be /sk add enemy monster
 # would in this case all all the entities listed below for monster 
